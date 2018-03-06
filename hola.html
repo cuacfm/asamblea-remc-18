@@ -61,16 +61,32 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
+		<script type="text/javascript">
+			function toggleAduio(){
+				var video = document.getElementById("video-asamblea");
+				var buttonText = document.getElementById("bt-mute-video");
+			
+				if(video.muted){
+					video.muted = false;
+					buttonText.innerHTML = "Silenciar audio";
+				} else {
+					video.muted= true;
+					buttonText.innerHTML = "Habilitar audio";
+				}
+			}
+		</script>
+
 	</head>
 	<body>
 
 		<!-- Header   -->
 			<div id="header" class="fullscreen-bg">
-			
-				    <video loop muted autoplay poster="images/loading.jpg" class="fullscreen-bg__video">
-				        <source src="images/encuentro18.mp4" type="video/mp4">
-				    </video>
-		
+				<video id="video-asamblea" loop autoplay poster="images/loading.jpg" class="fullscreen-bg__video">
+			        <source src="images/encuentro18.mp4" type="video/mp4">
+				</video>
+			    <a id="bt-mute-video" href="javascript:void(0);" onclick="toggleAduio();" class="mutestyle">Silenciar</a>
 			</div>
 
 		<!-- Main -->
@@ -81,7 +97,6 @@
 					<span class="logo icon fa-child"></span>
 					<h1>Hola. Benvid@s</h1>
 					<h2>A Coruña sede de la Asamblea de la REMC 2018, 13-15 Abril</h2>
-
 				</header>
 
 			
@@ -97,7 +112,7 @@
 						<a href="#footer" class="image icon fa-group"><img src="images/asamblea.png" alt="asamblea remc 2018" /></a>
 						<div class="content">
 							<h3>Asamblea</h3>
-							<p>Sábado. La Asamblea de la REMC 2018 se celebrará en el centro cívico <a href="https://www.coruna.gal/serviciossociales/es/centros-y-entidades/centros-civicos-listado/detalle-centros-civicos/centro-civico-ciudad-vieja/entidad/1429665173429?argIdioma=es" target="_blank">Cidade Vella</a>. Vamos a elegir una nueva directiva y definir nuestros siguientes pasos.</p>
+							<p>Sábado. La Asamblea de la REMC 2018 se celebrará en el centro cívico <a href="https://www.coruna.gal/serviciossociales/es/centros-y-entidades/centros-civicos-listado/detalle-centros-civicos/centro-civico-ciudad-vieja/entidad/1429665173429?argIdioma=es" target="_blank">Cidade Vella</a>. Se diseñarán los pasos a dar en el próximo año.</p>
 						</div>
 					</section>
 					<section class="feature right">
@@ -111,7 +126,7 @@
 						<a href="#footer" class="image icon fa-beer"><img src="images/sesion-vermu.png" alt="sesion sesion-vermu" /></a>
 						<div class="content">
 							<h3>Diversion</h3>
-							<p>Domingo. Celebraremos con la ciudadania una pequeña sesion vermu tras el archivo de la sancion del expediente adminitrativo a CUAC FM por parte de la Xunta. Te animas?</p>
+							<p>Domingo. Celebraremos con la ciudadanía una pequeña sesión vermú tras el archivo de la sanción del expediente adminitrativo a CUAC FM por parte de la Xunta. Te animas?</p>
 						</div>
 					</section>
 				</div>
@@ -165,7 +180,8 @@
 					<h3>Síguenos en las redes sociales</h3>
 					<ul class="icons">
 						<li><a href="https://twitter.com/ReMC2018?lang=es" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="htpp://facebook.com/cuacfm" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/accounts/edit/?hl=es" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.facebook.com/Asamblea-Remc-2018-2037831189806085/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 					</ul>
 
 					<hr>

@@ -2505,6 +2505,18 @@
 
 /* Header */
 
+.mutestyle{
+	color: #999999 !important;
+	left: 5px !important;
+	position:fixed !important;
+	top: 5px !important;
+	background: #ddd;
+	border: #bbb;
+	border-radius:  2px;
+	padding:  5px;
+	z-index: 1000 !important;
+}
+
 	.fullscreen-bg {
   position: fixed;
   top: 0;

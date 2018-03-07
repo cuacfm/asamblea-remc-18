@@ -1999,10 +1999,30 @@
 			}
 
 /* Form */
+	.rf-row{
+		width: 60%; 
+		margin: 0 auto;
+	}
+
+	.rf-input{
+		height: 100% !important;
+	}
+
+	.rf-field{
+		height: 100% !important;
+	}
+
+	.rf-name{
+		max-width: 100% !important;
+	}
+
+	.rf-form .rf-row {
+		align-items  :center !important;
+	}
 
 	label {
 		display: block;
-		color: #5b5b5b;
+		color: #ffffff;
 		font-size: 0.8em;
 		font-weight: 700;
 		letter-spacing: 0.125em;
@@ -2013,6 +2033,7 @@
 
 	input[type="text"],
 	input[type="password"],
+	input[type="tel"],
 	input[type="email"],
 	select,
 	textarea {
@@ -2656,7 +2677,7 @@
 		*/
 
 		margin-top: -260px;
-		padding: calc(460px + 6em) 0 10em 0;
+		padding: calc(460px + 6em) 0 1em 0;
 		position: relative;
 		text-align: center;
 	}

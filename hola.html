@@ -62,8 +62,14 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
+		<script src="https://sdk.rocketforms.io/rf-sdk.js"></script>
+		<script>RocketForms.embed('5a9ef0e322a514000fdb76e9','#inscription-form');</script>
 
 		<script type="text/javascript">
+			function fixSubmitButton(){
+				$(".rf-submit").attr('value', 'Enviar');
+			}
+
 			function toggleAduio(){
 				var video = document.getElementById("video-asamblea");
 				var buttonText = document.getElementById("bt-mute-video");
@@ -79,7 +85,7 @@
 		</script>
 
 	</head>
-	<body>
+	<body onload="fixSubmitButton();">
 
 		<!-- Header   -->
 			<div id="header" class="fullscreen-bg">
@@ -153,29 +159,8 @@
 					</header>
 
 					<p>Cubre los siguienes campos antes del 27 de Marzo para realizar tu inscripción en la asamblea. El precio para los asistentes es de 25 Euros. Para realizar el pago te enviaremos un correo electrónico con las instrucciones una vez haya finalizado el plazo de inscripción.</p>
-
-					<form method="post" action="#">
-						<div class="row">
-							<div class="6u 12u(mobilep)">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="6u 12u(mobilep)">
-								<input type="email" name="email" placeholder="Email" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
+					
+					<div id="inscription-form" class=""></div>
 
 					<h3>Síguenos en las redes sociales</h3>
 					<ul class="icons">
@@ -205,6 +190,5 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

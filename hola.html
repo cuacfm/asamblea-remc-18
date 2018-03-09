@@ -82,6 +82,19 @@
 					buttonText.innerHTML = "Habilitar audio";
 				}
 			}
+
+			function scrollFunction() {
+			    var $toTop = $('#bt-mute-video');
+				$(window).scroll(function () {
+				    if ($(this).scrollTop() < 50) {
+				        $toTop.show();
+				    } else {
+				        $toTop.hide();
+				    }
+				});
+			}
+
+			window.onscroll = scrollFunction;
 		</script>
 
 	</head>

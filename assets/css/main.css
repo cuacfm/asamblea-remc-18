@@ -3193,3 +3193,40 @@
 				}
 
 	}
+	
+	
+	/* modal style*/
+	.all-modal {
+		background-color: #FFF;
+		box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+		padding: 24px;
+		width: 85% !important;
+		position: relative;
+		display: none;
+	}
+	.modal-close {
+		display: block;
+		position: absolute;
+		top: -35px;
+		right: 0;
+		z-index: 10000;
+		outline: none;
+		font-size: 30px;
+		line-height: 30px;
+		transition: transform .3s ease-in-out;
+		color: #FFF;
+	}
+	.modal-close-btn {
+		display: none;
+	}
+	
+	.btn-outline.btn-info {
+		color: #29b6f6;
+		border-color: #29b6f6;
+	}
+
+	.btn-outline {
+		background-color: transparent;
+		border: 1px solid transparent;
+		border-radius: 3px;
+	}
